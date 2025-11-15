@@ -11,7 +11,7 @@ function Home({ token, user }) {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/users', {
+        const response = await fetch('https://login-api-gules.vercel.app/api/users', {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
